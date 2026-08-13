@@ -1,10 +1,17 @@
 [
   {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-t": "terminal_panel::Toggle"
+    }
+  },
+  {
     "context": "Editor",
     "bindings": {
       "ctrl-b": "workspace::ToggleLeftDock",
       "ctrl-j": "pane::ActivateNextItem",
-      "ctrl-h": "pane::ActivatePrevItem"
+      "ctrl-h": "pane::ActivatePreviousItem",
+      "ctrl-t": "terminal_panel::Toggle"
     }
   },
   {
