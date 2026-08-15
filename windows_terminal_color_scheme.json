@@ -1,0 +1,23 @@
+Windows Terminal → Settings → Open the JSON file and find the "schemes" array.
+
+{
+    "name": "Tsoding Daily",
+    "background": "#181818",
+    "foreground": "#E8E8E8",
+    "black": "#181818",
+    "red": "#FF9B21",
+    "green": "#79BF46",
+    "yellow": "#FFDD33",
+    "blue": "#6A8FBF",
+    "purple": "#A78BFA",
+    "cyan": "#7CC7C7",
+    "white": "#BFC5BF",
+    "brightBlack": "#555555",
+    "brightRed": "#FF9B21",
+    "brightGreen": "#79BF46",
+    "brightYellow": "#FFDD33",
+    "brightBlue": "#8FAFD4",
+    "brightPurple": "#C4A7E7",
+    "brightCyan": "#9AD9D9",
+    "brightWhite": "#E8E8E8"
+}
