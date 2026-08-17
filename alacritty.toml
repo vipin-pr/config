@@ -1,0 +1,7 @@
+[general]
+import = [
+    "C:/Users/Vipin/AppData/Roaming/alacritty/themes/gruber_darker.toml"
+]
+
+[font]
+normal = { family = "Iosevka Term", style = "Regular" }
