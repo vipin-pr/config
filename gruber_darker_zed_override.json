@@ -1,0 +1,34 @@
+{
+  "buffer_font_size": 16.0,
+  "buffer_font_family": "Iosevka Term",
+  "project_panel": {
+    "dock": "left"
+  },
+  "theme": "Gruber Darker",
+  "theme_overrides": {
+    "Gruber Darker": {
+      "syntax": {
+        "string": {
+          "font_style": "normal"
+        },
+        "string.escape": {
+          "font_style": "normal"
+        },
+        "string.regex": {
+          "font_style": "normal"
+        },
+        "string.special": {
+          "font_style": "normal"
+        },
+        "string.special.symbol": {
+          "font_style": "normal"
+        }
+      }
+    }
+  },
+  "vim_mode": true,
+  "vim": {
+    "toggle_relative_line_numbers": true
+  },
+  "relative_line_numbers": "enabled"
+}
