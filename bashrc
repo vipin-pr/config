@@ -1,4 +1,3 @@
-# export PS1='\u@\h:\[\e[32m\]\w\[\e[0m\]\$ '
 export EDITOR='vim'
 export LS_COLORS='di=01;34:ow=01;34:tw=01;34:st=01;34:ex=01;32:fi=0'
 
@@ -6,6 +5,7 @@ set -o vi
 bind -m vi-insert '"jj": vi-movement-mode'
 
 # Alias
+alias ls='ls --color=auto'
 alias hc='history | grep -i'
 alias cls='clear'
 alias grep='grep --color=always'
