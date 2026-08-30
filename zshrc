@@ -47,6 +47,7 @@ for m in visual viopp; do
     done
 done
 
+# File & Folder Color highlighting
 export LS_COLORS='di=01;34:ow=01;34:tw=01;34:st=01;34:ex=01;32:fi=0'
 
 # Alias
@@ -61,10 +62,11 @@ alias bat='batcat'
 alias k='kubecolor'
 alias kubectl='kubecolor'
 
-# Auto Suggestions - Install the plugin
+# Auto Suggestions - Plugin required
 # git clone https://github.com/zsh-users/zsh-autosuggestions \
 #  ~/.zsh/zsh-autosuggestions
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# PROMPT
 PROMPT=$'%F{blue}┌──(%F{green}%n%F{yellow}@%m%F{blue})-[%F{cyan}%~%F{blue}]\n└─%F{green}$%f '
