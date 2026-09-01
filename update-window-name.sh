@@ -32,4 +32,4 @@ else
 
     tmux display-message "Not logged into any server"
 
-fibind-key v run-shell "~/.tmux/update-window-name.sh"
+fi
