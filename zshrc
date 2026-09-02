@@ -68,5 +68,31 @@ alias kubectl='kubecolor'
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# Load Github Key
+SSH_ENV="$HOME/.ssh/agent-environment"
+SSH_PRIVATE_KEY="$HOME/.ssh/vpr-nrs-github-key"
+
+start_agent() {
+    echo "Starting new ssh-agent..."
+    /usr/bin/ssh-agent -s > "$SSH_ENV"
+    chmod 600 "$SSH_ENV"
+    source "$SSH_ENV" > /dev/null
+}
+
+# Load existing agent environment
+if [ -f "$SSH_ENV" ]; then
+    source "$SSH_ENV" > /dev/null
+fi
+
+# Start agent if it isn't running
+if [ -z "$SSH_AGENT_PID" ] || ! kill -0 "$SSH_AGENT_PID" 2>/dev/null; then
+    start_agent
+fi
+
+# Add key if it isn't already loaded
+if ! ssh-add -l >/dev/null 2>&1; then
+    ssh-add "$SSH_PRIVATE_KEY"
+fi
+
 # PROMPT
 PROMPT=$'%F{blue}┌──(%F{green}%n%F{yellow}@%m%F{blue})-[%F{cyan}%~%F{blue}]\n└─%F{green}$%f '
