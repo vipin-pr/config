@@ -19,5 +19,11 @@
     "bindings": {
       "j j": "vim::NormalBefore"
     }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !menu",
+    "bindings": {
+      "alt-t": ["workspace::SendKeystrokes", "c x i w w c x i w"]
+    }
   }
 ]
