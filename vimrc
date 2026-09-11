@@ -1,5 +1,4 @@
 colorscheme desert
-inoremap jj <Esc>
 syntax on
 set tabstop=2
 set shiftwidth=2
@@ -11,6 +10,10 @@ set ruler
 highlight Comment ctermfg=green
 set mouse=a
 set ignorecase
+
+inoremap jj <Esc>
+nnoremap <M-j> :m .+1<CR>
+nnoremap <M-k> :m .-2<CR>
 
 if exists('$TMUX')
   let &t_SI = "\e[6 q"
