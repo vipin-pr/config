@@ -26,15 +26,7 @@
 - `Ctrl+k + y` → Toggle sync panes  
 - `Ctrl+k + z` → Toggle zoom for the current pane  
 - `Ctrl+k + -` → Split pane horizontally (top/bottom)  
-- `Ctrl+k + |` → Split pane vertically (left/right)  
-
-## Pane Resizing (Custom Keys)
-- `Ctrl+k + ,` → Resize pane left  
-- `Ctrl+k + .` → Resize pane right  
-- `Ctrl+k + m` → Resize pane up  
-- `Ctrl+k + /` → Resize pane down  
-
-*Holding the key keeps resizing (repeatable).*
+- `Ctrl+k + |` → Split pane vertically (left/right)    
 
 ---
 
